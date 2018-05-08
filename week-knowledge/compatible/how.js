@@ -27,3 +27,9 @@
 // 其中url里为htc文件的相对路径
 // if(window.update_css3_fix) update_css3_fix(el);
 // 动态更新后调整
+// 
+	
+// 4、babel-polyfill
+// $ npm install --save babel-polyfill
+// 脚本头部引入：
+// import 'babel-polyfill';// 或者require('babel-polyfill');
