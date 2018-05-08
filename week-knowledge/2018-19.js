@@ -15,4 +15,18 @@ echo 插件实现图片懒加载
     &	    &#38;	&amp;
     <	    &#60;	&lt;
     >	    &#62;	&gt;
-    不断开空格(non-breaking space)	&#160;	&nbsp;
+            &#160;	&nbsp;
+
+1、
+    sourceMap的生成
+    //@ sourceMappingURL=jquery.min.map
+        java -jar compiler.jar \ 
+　　　　--js script.js \
+　　　　--create_source_map ./script-min.js.map \
+　　　　--source_map_format=V3 \
+　　　　--js_output_file script-min.js
+
+　  - js： 转换前的代码文件
+　　- create_source_map： 生成的source map文件
+　　- source_map_format：source map的版本，目前一律采用V3。
+　　- js_output_file： 转换后的代码文件
